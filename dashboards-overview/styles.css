@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.image {
+    width: 100%;
+}
+
+.title-card {
+  font-weight: bold;
+  display: table;
+  width: 100%;
+}
+
+.title-card p {
+  font-size:1vw;
+  color: rgb(255, 0, 0);
+  display: table-cell; 
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.tile {
+    background-color: rgb(255, 0, 0);
+}
+
+ .grid-container {
+     max-width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, minmax(100px, 1fr));
+     gap: 1.5em;
+     box-sizing: border-box;
+     grid-auto-rows: 1fr;
+     margin-top: 2em;
+     align-items: stretch;
+}
+ .grid-item {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+}
+
+.float-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.float-child-text, .float-child-image {
+    display: table-cell;
+    vertical-align: middle; 
+    height: 100%
+}
+
+.float-child-text {
+    width: 60%;
+}
+
+.float-child-image {
+    width: 40%;    
+}
+
+.float-child-text {
+    padding: 1em;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: center;
+    hyphens: manual;
+}
+
+.float-image {
+    width: 100%;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+.div-hover-effect {
+    color: black;
+    background: white;
+    background-size: 200%;
+    transition: .3s ease-out;
+    border-style: solid;
+    border-color: #e5e5e5;
+}
+
+.div-hover-effect:hover {
+    background: #e5e5e5;
+    border-color: #e5e5e5;
+    color: black;
+    transform: scale(1.02);
+}
+
+/* For smaller screens */
+ @media (max-width: 1024px) {
+     .grid-container {
+         grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+    .float-child-text {
+        font-size: 2em;
+    }
+}
+
+/* For smaller screens */
+ @media (max-width: 768px) {
+     .grid-container {
+         grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+    .float-child-text {
+        font-size: 1.2em;
+    }
+     
+}
+
+/* Preven link highlighting */
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
