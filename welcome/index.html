@@ -1,262 +1,319 @@
 <!DOCTYPE html>
-<ods-catalog-context context="catalog">
-   <section class="home-header">
-      <div class="rounded-corners">
-         <div class="welcome-card">
-            <h1 class="welcome-card-title">
-               <span>OGD-Portal Basel-Landschaft</span> 
-            </h1>
-         </div>
+<section class="home-header">
+   <div class="rounded-corners">
+      <div class="welcome-card">
+         <h1 class="welcome-card-title">
+            <span>OGD-Portal Basel-Landschaft</span>
+         </h1>
       </div>
-   </section>
-   <div class="container">
-      <div class="col-md-12">
-         <div class="col-md-6">
-            <div class="content-card hello-card">
-               <h1 class="welcome-card-title">Herzlich willkommen</h1>
-            </div>
-         </div>
-         <div class="col-md-6">
-            <div class="content-card hello-card">
-               <ods-catalog-search class-name="'custom-search-box'" label="'Datensätze durchsuchen'"></ods-catalog-search>
-            </div>
-         </div>
-      </div>
+   </div>
+</section>
+<div class="container">
+   <div class="col-md-12">
       <div class="col-md-6">
-         <div class="content-card hello-content-card">
-            <p>
-               Hier finden Sie das Open Government Data Angebot des Kantons Basel-Landschaft. Open Government Data (OGD) sind offene und maschinenlesbare Behördendaten, die <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">unter freier Lizenz</a> zu kommerziellen wie nicht-kommerziellen Zwecken weiterverwendet werden können.
-            </p>
-            <p>
-               Die <a href="https://ogd.bl.ch" target="_blank" rel="noopener noreferrer">Fach- und Koordinationsstelle OGD</a> betreut das Portal.
-            </p>
-         </div>
-         <div id="entry-points" class="content-card content-card-colored">
-            <div class="grid-container">
-               <div class="grid-item">
-                  <a href="https://data.bl.ch/explore/" class="kpi-button">
-                     <div class="kpi-card">
-                        <div class="upper-half"> 
-                           <i class="kpi-icon fa fa-database" aria-hidden="true"></i>
-                        </div>
-                        <p class="kpi-description">Zu allen Datensätzen</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item">
-                  <a href="https://data.bl.ch/pages/dashboards/" class="kpi-button">
-                     <div class="kpi-card">
-                        <div class="upper-half"> 
-                           <i class="kpi-icon fa fa-bar-chart" aria-hidden="true"></i>
-                        </div>
-                        <p class="kpi-description">Zu unseren Dashboards</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item">
-                  <a href="mailto:ogd@bl.ch?subject=Anfrage OGD Basel-Landschaft&body=Wir sind dankbar für Anregungen jeglicher Art. Haben Sie Ideen für neue Datensätze oder wollen Sie uns einfach Feedback (Fragen, Kritik, Lob) geben? Melden Sie sich ungeniert..." class="kpi-button">
-                     <div class="kpi-card">
-                        <div class="upper-half"> 
-                           <i class="kpi-icon fa fa-envelope" aria-hidden="true"></i>
-                        </div>
-                        <p class="kpi-description">Teilen Sie uns Ihre Wünsche mit</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item">
-                  <a href="https://twitter.com/ogd_bl" target="_blank" rel="noopener noreferrer" class="kpi-button">
-                     <div class="kpi-card">
-                        <div class="upper-half"> 
-                           <i class="kpi-icon fa fa-twitter" aria-hidden="true"></i>
-                        </div>
-                        <p class="kpi-description">Folgen Sie uns auf X</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item">
-                  <a href="https://github.com/ogd-bl" target="_blank" rel="noopener noreferrer" class="kpi-button">
-                     <div class="kpi-card">
-                        <div class="upper-half"> 
-                           <i class="kpi-icon fa fa-github" aria-hidden="true"></i>
-                        </div>
-                        <p class="kpi-description">Zu unseren Repositories auf GitHub</p>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item">
-                  <a href="https://ogd.bl.ch" target="_blank" rel="noopener noreferrer" class="kpi-button">
-                     <div class="kpi-card">
-                        <div class="upper-half"> 
-                           <i class="kpi-icon fa fa-info-circle" aria-hidden="true"></i>
-                        </div>
-                        <p class="kpi-description">Mehr zur Fachstelle OGD</p>
-                     </div>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <div class="content-card">
-            <h2>Beliebteste Datensätze</h2>
-            <ods-most-popular-datasets context="catalog" max="9" order-by="popularity"></ods-most-popular-datasets>
-         </div>
-      </div>
-      <div class="col-md-6">
-         <div id="theme-cards" class="content-card content-card-colored">
-            <div class="grid-container-themes">
-               <div class="grid-item-themes">
-                  <a href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Adressdaten">
-                     <div class="theme-card">
-                        <img src="/assets/theme_image/Briefkasten.png" class="theme-img">
-                        <div class="img-overlay">
-                           <div class="img-text">Adressdaten</div>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item-themes">
-                  <a href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Geodaten">
-                     <div class="theme-card">
-                        <img src="/assets/theme_image/Karten.PNG" class="theme-img">
-                        <div class="img-overlay">
-                           <div class="img-text">Geo- und Standortdaten</div>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item-themes">
-                  <a href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Prognosedaten">
-                     <div class="theme-card">
-                        <img src="/assets/theme_image/prognose_2.jpg" class="theme-img">
-                        <div class="img-overlay">
-                           <div class="img-text">Prognosedaten</div>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item-themes">
-                  <a href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Registerdaten">
-                     <div class="theme-card">
-                        <img src="/assets/theme_image/Ordner.PNG" class="theme-img">
-                        <div class="img-overlay">
-                           <div class="img-text">Registerdaten</div>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-               <div class="grid-item-themes">
-                  <a href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Statistikdaten">
-                     <div class="theme-card">
-                        <img src="/assets/theme_image/Statistik.PNG" class="theme-img">
-                        <div class="img-overlay">
-                           <div class="img-text">Statistikdaten</div>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <div class="content-card">
-            <h2>Weiterführende Links</h2>
-            <div>
-               <ul>
-                  <li><a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/statistisches-amt" target="_blank" rel="noopener noreferrer">Amt für Daten und Statistik BL</a></li>
-                  <li><a href="https://www.baselland.ch/politik-und-behorden/direktionen/volkswirtschafts-und-gesundheitsdirektion/amt-fur-geoinformation/geoportal" target="_blank" rel="noopener noreferrer">Geoportal BL (Amt für Geoinformation)</a></li>
-                  <li><a href="https://abstimmungen.bl.ch/" target="_blank" rel="noopener noreferrer">Wahl- und Abstimmungsportal BL</a></li>
-                  <li><a href="https://opendata.swiss/de/organization/kanton-basel-landschaft" target="_blank" rel="noopener noreferrer">Open Government Data BL auf opendata.swiss</a></li>
-               </ul>
-            </div>
-         </div>
-         <div id="kpi-cards" class="content-card content-card-colored">
-            <h2>Kennzahlen zum Portal</h2>
-            <ods-dataset-context context="ctx1, ctx2"
-               ctx1-dataset="10660"
-               ctx1-domain="https://data.bl.ch/"
-               ctx2-dataset="12440"
-               ctx2-domain="https://data.bl.ch/">
-               <div class="grid-container" style="margin-top:1em;">
-                  <div class="grid-item">
-                     <a href="https://data.bl.ch/explore/dataset/10660/table/" class="kpi-button">
-                        <div class="kpi-card">
-                           <div class="upper-half">
-                              <i class="kpi-icon fa fa-table" aria-hidden="true"></i>
-                              <div class="kpi-title"
-                                 ods-aggregation="result"
-                                 ods-aggregation-context="ctx1"
-                                 ods-aggregation-expression="Dataset identifier"
-                                 ods-aggregation-function="COUNT">
-                                 <p>
-                                    {{ result | number }}
-                                 </p>
-                              </div>
-                           </div>
-                           <p class="kpi-description">
-                              Verfügbare Datensätze
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="grid-item">
-                     <a href="https://data.bl.ch/explore/dataset/10660/table/" class="kpi-button">
-                        <div class="kpi-card">
-                           <div class="upper-half">
-                              <i class="kpi-icon fa fa-university" aria-hidden="true"></i>
-                              <div class="kpi-title"
-                                 ods-adv-analysis="uniquePublishers"
-                                 ods-adv-analysis-context="ctx1"
-                                 ods-adv-analysis-select="COUNT(DISTINCT publisher) as uniquePublisherCount">
-                                 {{uniquePublishers[0].uniquePublisherCount}}
-                              </div>
-                           </div>
-                           <p class="kpi-description">
-                              Publizierende Stellen
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="grid-item">
-                     <a href="https://data.bl.ch/explore/dataset/12440/table/" class="kpi-button">
-                        <div class="kpi-card">
-                           <div class="upper-half">
-                              <i class="kpi-icon fa fa-users" aria-hidden="true"></i>
-                              <div class="kpi-title"
-                                 ods-adv-analysis="visitors"
-                                 ods-adv-analysis-context="ctx2"
-                                 ods-adv-analysis-where="date > now(days=-8)"
-                                 ods-adv-analysis-select="AVG(unique_ip_count) as averageVisitors">
-                                 {{visitors[0].averageVisitors | number:0}}
-                              </div>
-                           </div>
-                           <p class="kpi-description">
-                              Tägliche Besucher*
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-                  <div class="grid-item">
-                     <a href="https://data.bl.ch/explore/dataset/12440/table/" class="kpi-button">
-                        <div class="kpi-card">
-                           <div class="upper-half">
-                              <i class="kpi-icon fa fa-hand-pointer-o" aria-hidden="true"></i>
-                              <div class="kpi-title"
-                                 ods-adv-analysis="interactions"
-                                 ods-adv-analysis-context="ctx2"
-                                 ods-adv-analysis-where="date > now(days=-8)"
-                                 ods-adv-analysis-select="AVG(dataset_interactions) as averageInteractions">
-                                 {{interactions[0].averageInteractions | number:0}}
-                              </div>
-                           </div>
-                           <p class="kpi-description">
-                              Tägliche Interaktionen mit Datensätzen*
-                           </p>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </ods-dataset-context>
-            <p class="footnote">
-               * Durchschnitt der vergangenen 7 Tage
-            </p>
+         <div class="content-card hello-card">
+            <h1 class="welcome-card-title">Herzlich willkommen</h1>
          </div>
       </div>
    </div>
-</ods-catalog-context>
+   <div class="col-md-6">
+      <div class="content-card hello-content-card">
+         <p>
+            Hier finden Sie das Open Government Data Angebot des Kantons Basel-Landschaft. Open Government Data (OGD)
+            sind offene und maschinenlesbare Behördendaten, die <a href="https://creativecommons.org/licenses/by/4.0/"
+               target="_blank" rel="noopener noreferrer">unter freier Lizenz</a> zu kommerziellen wie
+            nicht-kommerziellen Zwecken weiterverwendet werden können.
+         </p>
+         <p>
+            Die <a href="https://ogd.bl.ch" target="_blank" rel="noopener noreferrer">Fach- und Koordinationsstelle
+               OGD</a> betreut das Portal.
+         </p>
+      </div>
+      <div id="entry-points" class="content-card content-card-colored">
+         <div class="grid-container">
+            <div class="grid-item">
+               <a href="https://data.bl.ch/explore/" class="kpi-button">
+                  <div class="kpi-card">
+                     <div class="upper-half">
+                        <i class="kpi-icon fa fa-database" aria-hidden="true"></i>
+                     </div>
+                     <p class="kpi-description">Zu allen Datensätzen</p>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item">
+               <a href="https://data.bl.ch/pages/dashboards/" class="kpi-button">
+                  <div class="kpi-card">
+                     <div class="upper-half">
+                        <i class="kpi-icon fa fa-bar-chart" aria-hidden="true"></i>
+                     </div>
+                     <p class="kpi-description">Zu unseren Dashboards</p>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item">
+               <a href="https://data.bl.ch/pages/contact-form/" class="kpi-button">
+                  <div class="kpi-card">
+                     <div class="upper-half">
+                        <i class="kpi-icon fa fa-envelope" aria-hidden="true"></i>
+                     </div>
+                     <p class="kpi-description">Teilen Sie uns Ihre Wünsche mit</p>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item">
+               <a href="https://twitter.com/ogd_bl" target="_blank" rel="noopener noreferrer" class="kpi-button">
+                  <div class="kpi-card">
+                     <div class="upper-half">
+                        <i class="kpi-icon fa fa-twitter" aria-hidden="true"></i>
+                     </div>
+                     <p class="kpi-description">Folgen Sie uns auf X</p>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item">
+               <a href="https://github.com/ogd-bl" target="_blank" rel="noopener noreferrer" class="kpi-button">
+                  <div class="kpi-card">
+                     <div class="upper-half">
+                        <i class="kpi-icon fa fa-github" aria-hidden="true"></i>
+                     </div>
+                     <p class="kpi-description">Zu unseren Repositories auf GitHub</p>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item">
+               <a href="https://ogd.bl.ch" target="_blank" rel="noopener noreferrer" class="kpi-button">
+                  <div class="kpi-card">
+                     <div class="upper-half">
+                        <i class="kpi-icon fa fa-info-circle" aria-hidden="true"></i>
+                     </div>
+                     <p class="kpi-description">Mehr zur Fachstelle OGD</p>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="content-card">
+         <h2>Beliebteste Datensätze</h2>
+         <ods-catalog-context context="catalog">
+            <ods-most-popular-datasets context="catalog" max="9" order-by="popularity"></ods-most-popular-datasets>
+         </ods-catalog-context>
+      </div>
+   </div>
+   <div class="col-md-6">
+      <div id="theme-cards" class="content-card content-card-colored">
+         <div class="grid-container-themes">
+            <div class="grid-item-themes">
+               <a
+                  href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Adressdaten">
+                  <div class="theme-card">
+                     <img src="/assets/theme_image/Briefkasten.png" class="theme-img">
+                     <div class="img-overlay">
+                        <div class="img-text">Adressdaten</div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item-themes">
+               <a
+                  href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Geodaten">
+                  <div class="theme-card">
+                     <img src="/assets/theme_image/Karten.PNG" class="theme-img">
+                     <div class="img-overlay">
+                        <div class="img-text">Geo- und Standortdaten</div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item-themes">
+               <a
+                  href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Prognosedaten">
+                  <div class="theme-card">
+                     <img src="/assets/theme_image/prognose_3.jpeg" class="theme-img">
+                     <div class="img-overlay">
+                        <div class="img-text">Prognosedaten</div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item-themes">
+               <a
+                  href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Registerdaten">
+                  <div class="theme-card">
+                     <img src="/assets/theme_image/Ordner.PNG" class="theme-img">
+                     <div class="img-overlay">
+                        <div class="img-text">Registerdaten</div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item-themes">
+               <a
+                  href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&q=Statistikdaten">
+                  <div class="theme-card">
+                     <img src="/assets/theme_image/Statistik.PNG" class="theme-img">
+                     <div class="img-overlay">
+                        <div class="img-text">Statistikdaten</div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div class="grid-item-themes">
+               <a
+                  href="https://data.bl.ch/explore/?disjunctive.theme&disjunctive.publisher&disjunctive.keyword&sort=title&refine.keyword=Echtzeitdaten">
+                  <div class="theme-card">
+                     <img src="/assets/theme_image/Clock.jpeg" class="theme-img">
+                     <div class="img-overlay">
+                        <div class="img-text">Echtzeitdaten</div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="content-card">
+         <h2>Weiterführende Links</h2>
+         <div>
+            <ul>
+               <li><a href="https://www.baselland.ch/politik-und-behorden/direktionen/finanz-und-kirchendirektion/statistisches-amt"
+                     target="_blank" rel="noopener noreferrer">Amt für Daten und Statistik BL</a></li>
+               <li><a href="https://www.baselland.ch/politik-und-behorden/direktionen/volkswirtschafts-und-gesundheitsdirektion/amt-fur-geoinformation/geoportal"
+                     target="_blank" rel="noopener noreferrer">Geoportal BL (Amt für Geoinformation)</a></li>
+               <li><a href="https://abstimmungen.bl.ch/" target="_blank" rel="noopener noreferrer">Wahl- und
+                     Abstimmungsportal BL</a></li>
+               <li><a href="https://opendata.swiss/de/organization/kanton-basel-landschaft" target="_blank"
+                     rel="noopener noreferrer">Open Government Data BL auf opendata.swiss</a></li>
+            </ul>
+         </div>
+      </div>
+      <div id="kpi-cards" class="content-card content-card-colored">
+         <h2>Kennzahlen zum Portal</h2>
+         <ods-dataset-context context="ctx1, ctx2" ctx1-dataset="10660" ctx1-domain="https://data.bl.ch/"
+            ctx2-dataset="12440" ctx2-domain="https://data.bl.ch/">
+            <div class="grid-container" style="margin-top:1em;">
+               <div class="grid-item">
+                  <a href="https://data.bl.ch/explore/dataset/10660/table/" class="kpi-button">
+                     <div class="kpi-card">
+                        <div class="upper-half">
+                           <i class="kpi-icon fa fa-table" aria-hidden="true"></i>
+                           <div class="kpi-title" ods-aggregation="result" ods-aggregation-context="ctx1"
+                              ods-aggregation-expression="Dataset identifier" ods-aggregation-function="COUNT">
+                              <p>
+                                 {{ result | number }}
+                              </p>
+                           </div>
+                        </div>
+                        <p class="kpi-description">
+                           Verfügbare Datensätze
+                        </p>
+                     </div>
+                  </a>
+               </div>
+               <div class="grid-item">
+                  <a href="https://data.bl.ch/explore/dataset/10660/table/" class="kpi-button">
+                     <div class="kpi-card">
+                        <div class="upper-half">
+                           <i class="kpi-icon fa fa-university" aria-hidden="true"></i>
+                           <div class="kpi-title" ods-adv-analysis="uniquePublishers" ods-adv-analysis-context="ctx1"
+                              ods-adv-analysis-select="COUNT(DISTINCT publisher) as uniquePublisherCount">
+                              {{uniquePublishers[0].uniquePublisherCount}}
+                           </div>
+                        </div>
+                        <p class="kpi-description">
+                           Publizierende Stellen
+                        </p>
+                     </div>
+                  </a>
+               </div>
+               <div class="grid-item">
+                  <a href="https://data.bl.ch/explore/dataset/12440/table/" class="kpi-button">
+                     <div class="kpi-card">
+                        <div class="upper-half">
+                           <i class="kpi-icon fa fa-users" aria-hidden="true"></i>
+                           <div class="kpi-title" ods-adv-analysis="visitors" ods-adv-analysis-context="ctx2"
+                              ods-adv-analysis-where="date > now(days=-8)"
+                              ods-adv-analysis-select="AVG(unique_ip_count) as averageVisitors">
+                              {{visitors[0].averageVisitors | number:0}}
+                           </div>
+                        </div>
+                        <p class="kpi-description">
+                           Tägliche Besucher/innen*
+                        </p>
+                     </div>
+                  </a>
+               </div>
+               <div class="grid-item">
+                  <a href="https://data.bl.ch/explore/dataset/12440/table/" class="kpi-button">
+                     <div class="kpi-card">
+                        <div class="upper-half">
+                           <i class="kpi-icon fa fa-hand-pointer-o" aria-hidden="true"></i>
+                           <div class="kpi-title" ods-adv-analysis="interactions" ods-adv-analysis-context="ctx2"
+                              ods-adv-analysis-where="date > now(days=-8)"
+                              ods-adv-analysis-select="AVG(dataset_interactions) as averageInteractions">
+                              {{interactions[0].averageInteractions | number:0}}
+                           </div>
+                        </div>
+                        <p class="kpi-description">
+                           Tägliche Interaktionen mit Datensätzen*
+                        </p>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </ods-dataset-context>
+         <p class="footnote">
+            * Durchschnitt der vergangenen 7 Tage
+         </p>
+      </div>
+   </div>
+   <div class="col-md-12 highlights">
+      <div class="content-card content-card-colored">
+         <h1>Highlights</h1>
+         <div class="content-card highlight-effect">
+            <div class="col-md-4 highlight-text">
+               <h2>Echtzeitdaten zur Luftqualität</h2>
+               <p>
+                  Gemeinsam mit dem Luft&shy;hygiene&shy;amt beider Basel bieten wir stündlich aktuali&shy;sierte
+                  Datensätze dreier Mess&shy;stationen zur Luft&shy;qualität an:
+               </p>
+               <ul>
+                  <li><a href="https://data.bl.ch/explore/dataset/12450/information/">Luftqualität Station
+                        Sissach-Bützenen</a></li>
+                  <li><a href="https://data.bl.ch/explore/dataset/12510/information/">Luftqualität Station A2 Hard</a>
+                  </li>
+                  <li><a href="https://data.bl.ch/explore/dataset/12500/information/">Luftqualität Station Dornach</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md-8">
+               <ods-dataset-context context="ctx" ctx-dataset="12450"
+                  ctx-parameters="{'q.daterangeslider':'anfangszeit:[2024-06-11 TO 2024-06-12]'}">
+                  <div class="visualization-container">
+                     <h3><a href="https://data.bl.ch/explore/dataset/12450/information/">Luftqualität Station
+                           Sissach-Bützenen</a></h3>
+                     <ods-date-range-slider class="chart" context="ctx" date-format="DD MMM YYYY"
+                        initial-from="yesterday" initial-to="now" date-field="anfangszeit" start-bound="'2020/01/01'"
+                        end-bound="'now'">
+                     </ods-date-range-slider>
+
+                     <ods-chart class="chart" single-y-axis="true" single-y-axis-label="µg/m3" ,
+                        label-x="Datum/Uhrzeit">
+                        <ods-chart-query context="ctx" field-x="anfangszeit" timescale="hour">
+                           <ods-chart-serie expression-y=no2 chart-type="line" function-y="AVG" label-y="NO2"
+                              color="brown" scientific-display="true"></ods-chart-serie>
+                           <ods-chart-serie expression-y="o3" chart-type="line" function-y="AVG" label-y="O3"
+                              color="blue"></ods-chart-serie>
+                           <ods-chart-serie expression-y="pm10" chart-type="line" function-y="AVG" label-y="PM10"
+                              color="red"></ods-chart-serie>
+                           <ods-chart-serie expression-y="pm2_5" chart-type="line" function-y="AVG" label-y="PM2.5"
+                              color="orange"></ods-chart-serie>
+                        </ods-chart-query>
+                     </ods-chart>
+
+                  </div>
+               </ods-dataset-context>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
